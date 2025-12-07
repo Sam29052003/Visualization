@@ -8,7 +8,6 @@ This project demonstrates how raw numbers can be transformed into meaningful ins
 - sales_data.csv - 12 months sales data
 - Data_Visualization_Project.ipynb - Complete analysis notebook
 - Charts: Line, Bar, Pie, Heatmap
-- Insights and business recommendations
 
 ## Tools Used
 - Python
