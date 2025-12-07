@@ -83,14 +83,14 @@ To showcase how data visualization helps understand patterns, trends, and insigh
 
 
               # Create numeric month column for correlation
-df_numeric = df.copy()
-df_numeric['Month_Num'] = range(1,13)
-corr_matrix = df_numeric[['Month_Num', 'Sales']].corr()
+              df_numeric = df.copy()
+              df_numeric['Month_Num'] = range(1,13)
+              corr_matrix = df_numeric[['Month_Num', 'Sales']].corr()
 
-plt.figure(figsize=(8,6))
-sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', center=0,
-            square=True, linewidths=1, cbar_kws={"shrink": .8})
-plt.title('Correlation Heatmap: Month vs Sales', fontsize=14, fontweight='bold')
-plt.tight_layout()
-plt.show()
-print("Correlation between Month Number and Sales:", corr_matrix.iloc[0,1].round(3))
+              plt.figure(figsize=(8,6))
+              sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', center=0,
+                          square=True, linewidths=1, cbar_kws={"shrink": .8})
+              plt.title('Correlation Heatmap: Month vs Sales', fontsize=14, fontweight='bold')
+              plt.tight_layout()
+              plt.show()
+              print("Correlation between Month Number and Sales:", corr_matrix.iloc[0,1].round(3))
