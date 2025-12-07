@@ -24,20 +24,20 @@ To showcase how data visualization helps understand patterns, trends, and insigh
 
 ## Codes
 
-               import pandas as pd
+            import pandas as pd
 
-               from google.colab import files
-               uploaded = files.upload()
+            from google.colab import files
+            uploaded = files.upload()
 
-              import pandas as pd
-              import matplotlib.pyplot as plt
-              import seaborn as sns
-              import numpy as np
-              %matplotlib inline
-              plt.style.use('default')
-              sns.set_palette("husl")
-              plt.rcParams['figure.figsize'] = (12, 8)
-              print("Libraries imported successfully!")
+            import pandas as pd
+            import matplotlib.pyplot as plt
+            import seaborn as sns
+            import numpy as np
+            %matplotlib inline
+            plt.style.use('default')
+            sns.set_palette("husl")
+            plt.rcParams['figure.figsize'] = (12, 8)
+            print("Libraries imported successfully!")
 
 
              df = pd.read_csv('sales_data.csv')
