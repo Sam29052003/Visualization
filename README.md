@@ -23,13 +23,13 @@ To showcase how data visualization helps understand patterns, trends, and insigh
 
 
 ## Codes
+# Import Libraries and Files
 
             import pandas as pd
 
             from google.colab import files
             uploaded = files.upload()
 
-# Import Libraries
 
             import pandas as pd
             import matplotlib.pyplot as plt
