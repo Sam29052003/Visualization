@@ -29,6 +29,8 @@ To showcase how data visualization helps understand patterns, trends, and insigh
             from google.colab import files
             uploaded = files.upload()
 
+# Import Libraries
+
             import pandas as pd
             import matplotlib.pyplot as plt
             import seaborn as sns
@@ -40,6 +42,7 @@ To showcase how data visualization helps understand patterns, trends, and insigh
             print("Libraries imported successfully!")
 
 
+# Loading Dataset
              df = pd.read_csv('sales_data.csv')
              print("Dataset Preview:")
              print(df.head())
@@ -48,6 +51,7 @@ To showcase how data visualization helps understand patterns, trends, and insigh
              print("\nDataset Description:")
              print(df.describe())            
 
+# Line Chart - Monthly Sales Trend
              plt.figure(figsize=(10,6))
              plt.plot(df['Month'], df['Sales'], marker='o', linewidth=2.5, markersize=8, color='#2E86AB')
              plt.title('Monthly Sales Trend', fontsize=16, fontweight='bold')
@@ -58,7 +62,7 @@ To showcase how data visualization helps understand patterns, trends, and insigh
              plt.tight_layout()
              plt.show()
 
-             
+# Bar Chart - Sales by Month
              plt.figure(figsize=(12,6))
              bars = plt.bar(df['Month'], df['Sales'], color='skyblue', edgecolor='navy', alpha=0.8)
              plt.title('Sales by Month', fontsize=16, fontweight='bold')
@@ -72,6 +76,7 @@ To showcase how data visualization helps understand patterns, trends, and insigh
                         plt.tight_layout()
                         plt.show()
 
+# Pie Chart - Sales Distribution
 
               plt.figure(figsize=(10,10))
               plt.pie(df['Sales'], labels=df['Month'], autopct='%1.1f%%', startangle=90,
@@ -81,7 +86,7 @@ To showcase how data visualization helps understand patterns, trends, and insigh
               plt.tight_layout()
               plt.show()
 
-
+# Heatmap - Correlation Matrix
               # Create numeric month column for correlation
               df_numeric = df.copy()
               df_numeric['Month_Num'] = range(1,13)
